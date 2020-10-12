@@ -107,7 +107,7 @@ func TestFulfillmentCreate(t *testing.T) {
 	fulfillment := Fulfillment{
 		LocationID:     905684977,
 		TrackingNumber: "123456789",
-		TrackingUrls: []string{
+		TrackingURLs: []string{
 			"https://shipping.xyz/track.php?num=123456789",
 			"https://anothershipper.corp/track.php?code=abc",
 		},

@@ -56,8 +56,8 @@ type Fulfillment struct {
 	TrackingNumbers             []string                     `json:"tracking_numbers,omitempty"`
 	TrackingURL                 string                       `json:"tracking_url,omitempty"`
 	TrackingURLs                []string                     `json:"tracking_urls,omitempty"`
-	TrackingInfo                TrackingInfo                 `json:"tracking_info,omitempty"`
-	Receipt                     Receipt                      `json:"receipt,omitempty"`
+	TrackingInfo                *TrackingInfo                `json:"tracking_info,omitempty"`
+	Receipt                     *Receipt                     `json:"receipt,omitempty"`
 	LineItems                   []LineItem                   `json:"line_items,omitempty"`
 	LineItemsByFulfillmentOrder []LineItemByFulfillmentOrder `json:"line_items_by_fulfillment_order,omitempty"`
 	NotifyCustomer              bool                         `json:"notify_customer"`
